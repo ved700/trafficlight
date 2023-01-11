@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(0, 7, 136);
+}
+
+.main{
+    background-color: rgb(226, 218, 217);
+    display: table;
+    border: 10px solid rgb(195, 9, 228);
+    margin: auto;
+}
+.light{
+  
+width:50px;
+height:50px;
+background: rgb(218, 182, 207);
+margin:10px;
+border-radius: 50%;
+text-align: center;
+font-family: sans-serif;
+font-size: 30px;
+line-height: 50px;
+color: rgba(27, 3, 239, 0.962);
+}

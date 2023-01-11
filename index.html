@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="trrafficSystem()">
+    <div class="main">
+    
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+
+
+</div>
+<script>
+    var i = 0;
+    var n=10;
+    var cArray=["red","yellow","green"];
+    function trrafficSystem(){
+     var l=document.getElementsByClassName('light');
+
+   for(var j=0;j<l.length;j++){
+       l[j].style.background="black";
+       l[j].innerHTML="";
+       }
+        l[i].style.background=cArray[i];
+          
+         if(i<l.length){
+            if(n<=10){
+            l[i].innerHTML=n;
+            n--;
+        
+             }
+             if(n==-1){
+                i++;
+                n=10;
+             }
+             if(i==3){
+                i=0;
+             }
+       
+    }
+    
+    }
+setInterval(trrafficSystem,1000)
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
